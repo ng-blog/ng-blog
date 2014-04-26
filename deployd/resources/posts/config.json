@@ -1,0 +1,77 @@
+{
+	"type": "Collection",
+	"properties": {
+		"author": {
+			"name": "author",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "author",
+			"order": 0
+		},
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "title",
+			"order": 1
+		},
+		"body": {
+			"name": "body",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "body",
+			"order": 2
+		},
+		"slug": {
+			"name": "slug",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "slug",
+			"order": 3
+		},
+		"tags": {
+			"name": "tags",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "tags",
+			"order": 4
+		},
+		"type": {
+			"name": "type",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "type",
+			"order": 5
+		},
+		"isMenuItem": {
+			"name": "isMenuItem",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "isMenuItem",
+			"order": 6
+		},
+		"menuOrder": {
+			"name": "menuOrder",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "menuOrder",
+			"order": 7
+		},
+		"isHome": {
+			"name": "isHome",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "isHome",
+			"order": 8
+		}
+	}
+}

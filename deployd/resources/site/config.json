@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"siteName": {
+			"name": "siteName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "siteName",
+			"order": 0
+		},
+		"footer": {
+			"name": "footer",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "footer",
+			"order": 1
+		},
+		"sidebar": {
+			"name": "sidebar",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "sidebar",
+			"order": 2
+		}
+	}
+}

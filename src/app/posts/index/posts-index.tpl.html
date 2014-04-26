@@ -1,0 +1,46 @@
+<div class="row">
+	
+	<div class="col-md-8">
+		
+		<div class="row">
+			<div ng-switch="tagFilter" class="col-md-8">
+
+				<h1 class="page-header" ng-switch-when="false">Blog</h2>
+				<h1 class="page-header" ng-switch-when="true">Blog 
+					<small><a href="/posts">(show all posts)</a></small></h2>
+			</div>
+			<div class="col-md-4">
+				<form class="navbar-form navbar-left" role="search">
+		  			<div class="form-group">
+		    			<input type="text" class="form-control" ng-model="search" placeholder="Search">
+		  			</div>
+  
+				</form>
+			</div>
+		</div>
+		
+		
+		<ul class="list-unstyled">
+			<li class="well" ng-repeat="post in posts | filter:search" >
+				<h1><a href="/post/{{post.slug}}">{{post.title}}</a></h1>
+				<p ng-if="user.role==='admin'">Post Type: {{post.type}}</p>
+				<p>Author: {{post.author}}</p>
+				<p class="teaser">{{post.body | teaser}} <a href="/post/{{post.slug}}">Read more</a></p>
+				<ul class="list-inline list-unstyled">
+					<li ng-if="isLoggedIn"><a class="btn btn-info" href="/edit-post/{{post.slug}}">Edit Post</a></li>
+					<li ng-if="isLoggedIn"><a class="btn btn-danger" href="/delete-post/{{post.id}}">Delete Post</a></li>
+				</ul>
+			</li>
+			
+			
+
+
+		</ul>
+	
+	</div>
+	<div class="col-md-3 col-md-offset-1">
+		<sidebar/>
+		
+		
+	</div>
+</div>

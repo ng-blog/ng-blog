@@ -1,0 +1,9 @@
+/deployd/data
+/deployd/.dpd
+/node_modules
+/vendor
+.DS_Store
+/deployd/resources/email
+/deployd/public
+build
+bin

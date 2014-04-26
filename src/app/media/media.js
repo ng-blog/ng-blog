@@ -1,0 +1,1 @@
+angular.module('app.media', ['media-img', 'media-gui']);

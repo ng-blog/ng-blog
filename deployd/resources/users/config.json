@@ -1,0 +1,29 @@
+{
+	"type": "UserCollection",
+	"properties": {
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "email",
+			"order": 0
+		},
+		"questions": {
+			"name": "questions",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "questions",
+			"order": 1
+		},
+		"role": {
+			"name": "role",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "role",
+			"order": 2
+		}
+	}
+}

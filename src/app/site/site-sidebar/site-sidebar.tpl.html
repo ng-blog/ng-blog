@@ -1,0 +1,28 @@
+<div id="sidebar">
+			
+			<div ng-if="categories" class="widget categories">
+				<h2 class="h2">Categories</h2>
+				<ul class="list-unstyled">
+					<li ng-repeat="category in categories">
+						<a href="/posts/tags/{{category}}">{{category}}</a>
+						
+					</li>
+				</ul>	
+			</div>
+
+			<div class="widget" ng-bind-html="settings.sidebar"></div>
+
+			<div ng-if="!categories" class="widget recent-blog-posts">
+				<h2 class="h2">Recent Blog Posts</h2>
+				<ul class="list-unstyled">
+					<li class="well well-sm" ng-repeat="post in blogPosts">
+						<p><a href="/post/{{post.slug}}">{{post.title}}</a></p>
+						
+					</li>
+				</ul>	
+			</div>
+
+
+
+
+</div>

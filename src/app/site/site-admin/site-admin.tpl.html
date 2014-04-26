@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-1">
+		<form action="">
+			<div class="form-group">
+				<label for="site-name">Site Name</label>
+				<input name="site-name" class="form-control" ng-model="settings.siteName" />	
+			</div>
+
+			<div class="form-group">
+				<label for="footer">Footer Content</label>
+				<textarea name="footer" class="form-control" ng-model="settings.footer" ></textarea>	
+			</div>
+			
+			<div class="form-group">
+				<label for="sidebar">Sidebar</label>
+				<textarea class="form-control" name="sidebar" ng-model="settings.sidebar"></textarea>	
+			</div>
+			
+	
+			<button class="btn btn-normal" ng-click="saveSettings()">Save Settings</button>
+	</form>
+	</div>
+</div>
