@@ -28,11 +28,6 @@ config(function config($stateProvider) {
 .controller('PostsEditCtrl',function($scope, $rootScope, $http, $location, post){
   $scope.post= post.data[0];
 
-   $scope.$watch('post.title', function(){
-    $scope.post.slug = $scope.post.title.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9\-\_ ]/g, '').toLowerCase();
-  });
-
-
   $scope.postUpdate=function(){
 
       if($scope.post.tags.length>0){
